@@ -2,15 +2,41 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <title>Frontend Project: HTML CSS</title>
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        
-        
-        <script src="" async defer></script>
+        <!--class is the ID to use in CSS
+            <span> separates the text so we can edit it separately in CSS. 
+                   In this case to have another color
+        -->
+        <div class="navbar">
+            <div class="container">
+                <a href="#">Remember<span>That</span></a>
+
+                <!--Menu icon for mobile, to replace the navbar
+                    alt attribute = for accessability, for people who can't read well, to know what it is
+                    id attribute = ID for JavaScript
+                -->
+                <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+                <nav>
+                    <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+
+                    <ul class="primary-nav">
+                        <li class="current"><a href="#">Home</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+
+                    <ul class="secondary-nav">
+                        <li><a href="#">Contact</a></li>
+                        <li class="go-premium-cta"><a href="#">Go Premium</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
     </body>
 </html>
